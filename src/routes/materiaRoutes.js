@@ -3,8 +3,10 @@ const router = express.Router();
 const materiaController = require('../controllers/materiaController');
 
 router.get('/', materiaController.getMaterias);
+router.get('/:id', materiaController.getMateria);
+router.get('/:id/alumnos', materiaController.getAlumnosporMateria);
 router.post('/', materiaController.createMateria);
-router.get('/:id/alumnos', materiaController.getAlumnosPorMateria);
+
 
 module.exports = router;
 // Este archivo define las rutas para las materias
