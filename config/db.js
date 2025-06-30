@@ -1,5 +1,5 @@
 const mysql = require('mysql2');
-const envs = require('../proyecto-backend-main/configurations/envs');
+const envs = require('../src/configurations/envs');
 
 
 // Configuración de la conexión a la base de datos usando variables del .env
